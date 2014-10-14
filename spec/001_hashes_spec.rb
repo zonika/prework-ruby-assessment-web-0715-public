@@ -1,9 +1,22 @@
-instructor = { :name=> 'Steven', :age=> 27 }
+describe "Hashes" do
+  language = {:name => "Ruby", :creator => "Yukihiro Matsumoto"}
 
-# a. Add a new key for location and give it the value 'NYC'.
+  it 'adds a new key for type and give it the value "dynamic"' do
+    # write your code here!
+    expect(language[:type]).to eq("dynamic") 
+  end
 
-# b. Write a statement to print out all the key/value pairs in the hash
+  it 'prints out all the key/value pairs in the hash' do
+    expect(STDOUT).to receive(:puts).with("name: Ruby")
+    expect(STDOUT).to receive(:puts).with("creator: Yukihiro Matsumoto")
+    # write your code here!
+  end
 
-# c. Return the name value from the hash.
+  it 'returns the value given key name' do
+    expect('__').to eq("Ruby") 
+  end
 
-# d. Return the key name for the value 27.
+  it 'returns the key creator given the value' do 
+    expect('__').to eq(:creator)
+  end
+end
