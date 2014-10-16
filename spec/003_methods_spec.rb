@@ -41,7 +41,6 @@ describe "Methods" do
   context 'add_new_key' do 
     it 'adds a new key at the top level of the school hash, given a key and a value' do
     add_new_key(school, :ranking, 1)
-    binding.pry 
     expect(school[:ranking]).to eq(1)
     end
   end
