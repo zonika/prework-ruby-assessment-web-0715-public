@@ -20,12 +20,12 @@ describe "Nested Structures" do
     expect(school[:founded_in]).to eq(2013)
   end
 
-  it 'adds a student to the school student array' do 
+  it 'adds a student to the school student array' do
     # write your code here!
     expect(school[:students].count).to eq(5)
   end
 
-  it 'removes "Billy" from the student array' do 
+  it 'removes "Billy" from the student array' do
     # write your code here!
     expect(school[:students][1]).to eq({:name => 'Frank', :grade => 'A'})
   end
@@ -35,21 +35,21 @@ describe "Nested Structures" do
     expect(school[:students][0].has_key?(:semester)).to eq(true)
   end
 
-  it "changes Steven's subject to 'being almost better than Blake'" do 
+  it "changes Steven's subject to 'being almost better than Blake'" do
     # write your code here!
     expect(school[:instructors][1][:subject]).to eq("being almost better than Blake")
   end
 
-  it "changes Frank's grade from 'A' to 'F'" do 
+  it "changes Frank's grade from 'A' to 'F'" do
     # write your code here!
-    expect(school[:students][2][:grade]).to eq('F')
+    expect(school[:students][1][:grade]).to eq('F')
   end
 
-  it "returns the name of the student with a 'B'" do 
+  it "returns the name of the student with a 'B'" do
     expect('__').to eq("Marissa")
   end
 
-  it "returns the subject of the instructor 'Jeff'" do 
+  it "returns the subject of the instructor 'Jeff'" do
     expect('__').to eq("karaoke")
   end
 end
