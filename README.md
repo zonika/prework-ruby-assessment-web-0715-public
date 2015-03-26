@@ -11,7 +11,7 @@ In the `spec/` directory you'll find spec files. Go through them sequentially (s
 
 You can run each spec file individually as you work on each section:
 
-`ironboard spec/000_arrays_spec.rb`
+`learn spec/000_arrays_spec.rb`
 
 For tests 000-002:
 * Code your solutions for the tests wherever you see a comment "write your code here!" or a '__' (note you will have to remove the ''). You will either be writing your solution within the test block or within the `expect()` part of the test. 
